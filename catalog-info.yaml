@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-form-1
+  description: demo-form-1
+  annotations:
+    github.com/project-slug: limp-idp-prj/demo-form-1
+    argocd/app-name: demo-form-1
+    backstage.io/kubernetes-id: demo-form-1
+    backstage.io/kubernetes-namespace: demo-form-1
+  links:
+    - url: http://demo-form-1.localtest.me
+      title: Service
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:default/guest
